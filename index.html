@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 
     <title>Artista - Silvinho Santos</title>
 </head>
+
 <body>
-    <header>
-        <h1><a href="#">Silvinho Santos</a></h1>
-        <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Discografia</li></a>
-            <a href="#"><li>Projetos</li></a>
-        </ul>
-    </header>
+    <header class="header">
+
+        <a href="#" title="Artista - Silvinho Santos" class="logo">
+            <i>Silvinho Santos</i>
+        </a>
     
+        <nav class="nav-container">
+            <ul>
+                <li>
+                    <a href="#" class="is-active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Discografia</a>
+                </li>
+                <li>
+                    <a href="#">Projetos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="btn">Contato</button>
+
+    </header>
+    <main class="main">
+        <section class="hero">
+            <img src="./src/public/images/backgraund.jpg" alt="">
+            <h1>Silvinho <i>Santos</i></h1>
+        </section>
+    </main>
+
 </body>
+
 </html>

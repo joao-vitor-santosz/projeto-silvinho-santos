@@ -1,0 +1,76 @@
+.discography {
+    display: none;
+    background-color: #1A1C16;
+    padding: 8rem 3rem;
+}
+
+.discography .title {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.discography .title .label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    color: #FFBA4A;
+    letter-spacing: 3.6px;
+    margin-bottom: 1rem;
+}
+
+.discography .title .title-discography {
+    font-size: 6rem;
+    font-weight: 400;
+    color: #E3E3D9;
+}
+
+.discography .albums-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.discography .albums-list .album {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discography .albums-list .album.reverse {
+    flex-direction: row-reverse;
+}
+
+.discography .albums-list .album .album-info {
+    max-width: 640px;
+}
+
+.discography .albums-list .album .album-title {
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #E3E3D9;
+    margin-bottom: 1.5rem;
+}
+
+.discography .albums-list .album .album-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125rem;
+    color: #C3C8BC;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.discography .albums-list .album .year-release {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discography .albums-list .album .year-release.reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.discography .albums-list .album .year-release .year {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    color: #FFBA4A;
+}

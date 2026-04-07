@@ -1,0 +1,155 @@
+.projects {
+    background-color: #12140E;
+    color: #fff;
+    padding: 10rem 3rem 6rem 3rem;
+}
+
+.projects .musical-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    margin-bottom: 5rem;
+}
+
+.projects .musical-projects .title {
+    font-size: 7rem;
+    font-weight: 400;
+    color: #E3E3D9;
+}
+
+.projects .musical-projects .title span {
+    color: #FFBA4A;
+}
+
+.projects .musical-projects .label {
+    max-width: 400px;
+    padding: 0 1.625rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125rem;
+    color: #C3C8BC;
+    line-height: 30px;
+    border-left: solid 2px #3b3d38;
+}
+
+.projects .featured-project {
+    display: flex;
+    align-items: center;
+    background-color: #1A1C16;
+    border-radius: 8px;
+    margin-bottom: 8rem;
+    width: 100%;
+}
+
+.projects .featured-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .featured-project .title-description {
+    padding: 4rem  3rem;
+}
+
+.projects .featured-project .title-description .album-title {
+    font-size: 3rem;
+    color: #E3E3D9;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.projects .featured-project .title-description .description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125rem;
+    color: #C3C8BC;
+    margin-bottom: 1.5rem;
+}
+
+.projects .featured-project .title-description .buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 1rem;
+}
+
+.projects .featured-project .title-description .buttons .button {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #3b3d38;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.projects .featured-project .title-description .buttons .button:hover {
+    background-color: #FFBA4A;
+    color: #442B00;
+}
+
+.projects .articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.projects .articles .small-project {
+    background-color: #43483f23;
+    height: 510px;
+    aspect-ratio: 3/4;
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.projects .articles .small-project .project-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.projects .articles .small-project .title-label {
+    padding: 2rem;
+    position: absolute;
+    bottom: 100px;
+    color: #12140E;
+}
+
+.projects .articles .small-project .title-label .album-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.projects .articles .small-project .title-label .label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.projects .articles .small-project .buttons-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.projects .articles .small-project .buttons-year .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.projects .articles .small-project .buttons-year .buttons img {
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+.projects .articles .small-project .buttons-year .buttons img:hover {
+    background-color: #FFBA4A;
+    
+}
+
+.projects .articles .small-project .buttons-year .year {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    color: #FFBA4A;
+    letter-spacing: 1.4px;
+}

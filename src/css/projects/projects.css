@@ -40,13 +40,23 @@
     width: 100%;
 }
 
+.projects .featured-project .podcast {
+    width: 100%;
+}
+
+.projects .featured-project .podcast img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .projects .featured-project .iframe {
     align-self: stretch;
     min-width: 400px;
 }
 
 .projects .featured-project .title-description {
-    padding: 4rem  3rem;
+    padding: 4rem 3rem;
 }
 
 .projects .featured-project .title-description .album-title {

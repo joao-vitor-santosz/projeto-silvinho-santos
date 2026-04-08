@@ -35,6 +35,11 @@
     justify-content: space-between;
 }
 
+.discography .albums-list .album .album-cover img {
+    max-width: 400px;
+    object-fit: cover;
+}
+
 .discography .albums-list .album.reverse {
     flex-direction: row-reverse;
 }

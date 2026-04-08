@@ -4,7 +4,7 @@
 
 /* Hero Section Styles */
 .hero {
-    background: url(../../public/images/image\ \(1\).png) no-repeat center top;
+    background: url(../../public/images/hero.png) no-repeat center top;
     background-size: cover;
     background-color: linear;
     height: 200vh;

@@ -110,7 +110,7 @@ body.menu-open::before {
         top: 0;
         right: 0;
         width: 270px;
-        height: 80vh;
+        height: 100vh;
         border-radius: 20px;
         padding: 6rem 2rem 3rem 2rem;
         background-color: #1c1917f5;

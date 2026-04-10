@@ -85,3 +85,141 @@
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 768px) {
+
+    .discography {
+        padding: 4rem 1.5rem;
+    }
+
+    .discography .title {
+        margin-bottom: 3rem;
+    }
+
+    .discography .title .title-discography {
+        font-size: 4rem;
+    }
+
+    .discography .albums-list {
+        gap: 5rem;
+    } 
+
+    .discography .albums-list .album {
+        gap: 3rem;
+    }
+
+    .discography .albums-list .album .album-cover img {
+        width: 200px;
+    }
+
+    .discography .albums-list .album .album-info {
+        max-width: 100%;
+    }
+
+    .discography .albums-list .album .album-title {
+        font-size: 2.75rem;
+    }
+
+    .discography .albums-list .album .album-description {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .discography .albums-list .album .buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .discography {
+        padding: 3rem 1rem;
+    }
+
+    .discography .title .title-discography {
+        font-size: 2.5rem;
+    }
+
+    .discography .albums-list {
+        gap: 4.5rem;
+    }
+
+    /* Todo álbum vira coluna, incluindo o .reverse */
+    .discography .albums-list .album,
+    .discography .albums-list .album.reverse {
+        flex-direction: column;
+    }
+
+    .discography .albums-list .album .album-cover img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .discography .albums-list .album .album-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .discography .albums-list .album .album-description {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* O .reverse do year-release também volta ao normal */
+    .discography .albums-list .album .year-release.reverse {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .discography .albums-list .album .buttons {
+        flex-direction: column;
+    }
+
+    .discography .albums-list .album .buttons .button {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .discography {
+        padding: 2.5rem 1rem;
+    }
+
+    .discography .title {
+        margin-bottom: 2rem;
+    }
+
+    .discography .title .label {
+        font-size: 0.5rem;
+    }
+
+    .discography .title .title-discography {
+        font-size: 3rem;
+    }
+
+    .discography .albums-list {
+        gap: 2.5rem;
+    }
+
+    .discography .albums-list .album .album-title {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .discography .albums-list .album .album-description {
+        font-size: 0.825rem;
+        line-height: 1.375rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .discography .albums-list .album .year-release {
+        margin-bottom: 0.75rem;
+    }
+
+    .discography .albums-list .album .buttons .button {
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+    }
+}

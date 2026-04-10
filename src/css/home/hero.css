@@ -166,3 +166,112 @@
         font-size: 1.75rem;
     }
 }
+
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero {
+        background-position: center 15%;
+        height: 100vh;
+        padding-left: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .hero .artist {
+        width: 75%;
+    }
+
+    .hero .artist-name {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .catchy-phrase {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact2, .streaming {
+        padding: 0.875rem 2rem;
+        font-size: 0.875rem;
+    }
+
+    /* About */
+    .about {
+        padding: 4rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .about .description .profession {
+        font-size: 2.75rem;
+    }
+
+    .about .description .history {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .about .description .info {
+        justify-content: space-around;
+    }
+
+    .about .description .info .years {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* Hero */
+    .hero {
+        background-position: 10% 15%;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+
+    .hero .artist-name {
+        font-size: 2.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero .catchy-phrase {
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero .buttons {
+        gap: 0.75rem;
+    }
+
+    .contact2, .streaming {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    /* About */
+    .about {
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .about .description .profession {
+        font-size: 1.75rem;
+    }
+
+    .about .description .history {
+        font-size: 0.9rem;
+        line-height: 1.75rem;
+    }
+
+    .about .description .info {
+        gap: 2.5rem;
+    }
+
+    .about .description .info .years {
+        font-size: 1.25rem;
+    }
+
+    .about .description .info .label {
+        font-size: 0.65rem;
+    }
+}

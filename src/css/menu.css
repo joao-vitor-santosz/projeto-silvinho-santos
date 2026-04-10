@@ -151,3 +151,33 @@ body.menu-open::before {
         margin-top: 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .header .nav-container {
+        width: 200px;
+    }
+
+    .header .nav-container ul {
+        font-size: 1.75rem;
+    }
+
+    .header .contact-mobile {
+        padding: 1.25rem 2.25rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .header .nav-container {
+        width: 140px;
+    }
+
+    .header .nav-container ul {
+        font-size: 1.25rem;
+    }
+
+    .header .contact-mobile {
+        padding: 0.85rem 1.75rem;
+        font-size: 1rem;
+    }
+}

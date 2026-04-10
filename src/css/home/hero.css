@@ -4,7 +4,8 @@
 
 /* Hero Section Styles */
 .hero {
-    background: url(../../public/images/hero.png) no-repeat center top;
+    background: url(../../public/images/hero.png) no-repeat;
+    background-position: center top;
     background-size: cover;
     background-color: linear;
     height: 200vh;
@@ -12,6 +13,7 @@
     display: flex;
     align-items: center;
     padding-left: 3rem;
+    padding-top: 5rem;
 }
 
 .hero::before {
@@ -51,7 +53,6 @@
 
 .hero .buttons .streaming {
     background-color: #72c019;
-    padding: 1.25rem 4rem;
 }
 
 .hero .buttons .streaming:hover {
@@ -120,4 +121,48 @@
 .about .description .info .label {
     font-size: 0.75rem;
     color: #C3C8BC;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-position: center 20%;
+        height: 100vh;
+    }
+
+    .hero .artist-name {
+        font-size: 5rem;
+    }
+
+    .hero .catchy-phrase {
+        font-size: 1.25rem;
+    }
+
+    .contact2, .streaming {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+
+    /* about section styles */
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 100%;
+        /* max-height: 400px; */
+        object-fit: cover;
+    }
+
+    .about .description {
+        max-width: 100%; /* remova o 60% que está causando problemas */
+    }
+
+    .about .description .profession {
+        font-size: 3rem;
+    }
+
+    .about .description .info .years {
+        font-size: 1.75rem;
+    }
 }

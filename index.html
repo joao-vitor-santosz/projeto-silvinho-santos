@@ -42,30 +42,30 @@
         <nav class="nav-container">
             <ul>
                 <li>
-                    <a href="#" class="is-active">Home</a>
+                    <a href="#" data-section="home" class="is-active">Home</a>
                 </li>
                 <li>
-                    <a href="#">Discografia</a>
+                    <a href="#" data-section="discography">Discografia</a>
                 </li>
                 <li>
-                    <a href="#">Projetos</a>
+                    <a href="#" data-section="projects">Projetos</a>
                 </li>
             </ul>
 
-            <a class="btn contact-mobile" href="#">Contato</a>
+            <a class="btn contact-mobile" href="https://wa.me/5569992041563?text=Olá%20Silvinho!%0APeguei%20seu%20contato%20através%20do%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário%20com%20você%20para%20meu%20evento." target="_blank">Contato</a>
         </nav>
 
-        <a class="btn contact1" href="#" target="_blank">Contato</a>
+        <a class="btn contact1" href="https://wa.me/5569992041563?text=Olá%20Silvinho!%0APeguei%20seu%20contato%20através%20do%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário%20com%20você%20para%20meu%20evento." target="_blank">Contato</a>
 
     </header>
     <main class="main">
-        <section class="home is-active">
+        <section class="home is-active" id="home">
             <section class="hero">
                 <div class="artist">
                     <h1 class="artist-name">Silvinho <span><i>Santos</i></span></h1>
                     <p class="catchy-phrase"><i>"Voz e Violão no Coração da Amazônia"</i></p>
                     <div class="buttons">
-                        <a href="#" target="_blank" class="btn contact2">Contato</a>
+                        <a href="https://wa.me/5569992041563?text=Olá%20Silvinho!%0APeguei%20seu%20contato%20através%20do%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário%20com%20você%20para%20meu%20evento." target="_blank" class="btn contact2">Contato</a>
                         <a href="https://open.spotify.com/intl-pt/artist/0B5SMTLw9pMwfwuxwwyNU0?si=SmHJVfqESL6tF0aryIVgKw"
                             target="_blank" class="btn streaming">Spotify</a>
                     </div>
@@ -111,7 +111,7 @@
             </section>
         </section>
 
-        <section class="discography">
+        <section class="discography" id="discography">
             <div class="title">
                 <p class="label">JORNADA MUSICAL</p>
                 <h2 class="title-discography"><i>Discografia</i></h2>
@@ -121,11 +121,10 @@
                 <div class="album">
                     <div class="album-info">
                         <h4 class="album-title">À Portovelhera</h4>
-                        <p class="album-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
-                            officia provident! Tempore magnam eum temporibus aspernatur exercitationem, eligendi
-                            sequinamnihil vero odit ea odio cum. Non ipsum aperiam totam?</p>
+                        <p class="album-description">Uma canção emblemática para quem é de Porto Velho. 
+                        <i>"À Portovelhera"</i> foi o primeiro single de Silvinho Santos a ser lançado nas plataformas de streaming, e hoje considerada uma das grandes obras musicais que fazem alusão à capital rondoniense, apresentando uma letra que tem na sua essência o modo de viver do povo portovelhense.</p>
                         <div class="year-release">
-                            <p class="year">2016</p>
+                            <p class="year">2015</p>
                             <img src="./src/public/images/horizontal-divider.svg" alt="Divisor Horiziontal">
                         </div>
                         <div class="buttons">
@@ -142,9 +141,7 @@
                 <div class="album reverse">
                     <div class="album-info">
                         <h4 class="album-title">Made In Amazônia</h4>
-                        <p class="album-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
-                            officia provident! Tempore magnam eum temporibus aspernatur exercitationem, eligendi
-                            sequinamnihil vero odit ea odio cum. Non ipsum aperiam totam?</p>
+                        <p class="album-description">Um EP que mostra a versatilidade do compositor Silvinho Santos, com músicas que refletem a riqueza cultural e natural da região amazônica. Com ritmos que passeiam do forró ao reggae, <i>Made in Amazônia</i> é a tradução em forma de música de uma cultura literalmente forjada pela miscigenação.</p>
                         <div class="year-release reverse">
                             <p class="year">2016</p>
                             <img src="./src/public/images/horizontal-divider.svg" alt="Divisor Horiziontal">
@@ -163,11 +160,9 @@
                 <div class="album">
                     <div class="album-info">
                         <h4 class="album-title">A Remada Continua</h4>
-                        <p class="album-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
-                            officia provident! Tempore magnam eum temporibus aspernatur exercitationem, eligendi
-                            sequinamnihil vero odit ea odio cum. Non ipsum aperiam totam?</p>
+                        <p class="album-description">Neste trabalho Silvinho Santos viaja em banzeiros diferentes. Em "<i>A Remada Continua</i>", o artista aposta em conteúdos mais universais, saindo um pouco da linha regional e apresentando baladas românticas, pop rock, chorinho e até mesmo tango. </p>
                         <div class="year-release">
-                            <p class="year">2016</p>
+                            <p class="year">2021</p>
                             <img src="./src/public/images/horizontal-divider.svg" alt="Divisor Horiziontal">
                         </div>
 
@@ -185,12 +180,10 @@
 
                 <div class="album reverse">
                     <div class="album-info">
-                        <h4 class="album-title">O Som Que Vem Do Norte, pt. 2</h4>
-                        <p class="album-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
-                            officia provident! Tempore magnam eum temporibus aspernatur exercitationem, eligendi
-                            sequinamnihil vero odit ea odio cum. Non ipsum aperiam totam?</p>
+                        <h4 class="album-title">O Som Que Vem Do Norte, pt.2</h4>
+                        <p class="album-description">Silvinho Santos mostra sua faceta folclorista em <i>O Som Que Vem Do Norte, pt.2</i>. Neste álbum de composições, cem porcento  autorais, voltadas ao movimento folclórico do boi-bumbá, o artista viaja nas lendas e crenças regionais. O repertório é composto por toadas que sagraram-se premiadas nos festivais aos quais Silvinho Santos participou.</p>
                         <div class="year-release">
-                            <p class="year">2016</p>
+                            <p class="year">2021</p>
                             <img src="./src/public/images/horizontal-divider.svg" alt="Divisor Horiziontal">
                         </div>
 
@@ -208,7 +201,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="musical-projects">
                 <h2 class="title">Projetos <br> <span><i>Audiovisuais</i></span></h2>
                 <p class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, earum eum nisi iure
@@ -222,9 +215,7 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">podcast - podblá</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
+                    <p class="description">O Podblá é um podcast que promove a cultura de Rondônia e da região Norte, dando visibilidade à arte da Amazônia. Aborda manifestações como música, dança, teatro, folclore, além de costumes e eventos culturais.</p>
                     <a href="https://www.youtube.com/@podbla_ofical" target="_blank" class="button">Assistir no YouTube</a>
                 </div>
             </article>
@@ -255,9 +246,6 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">Só sei que sou do norte - ao vivo</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
                 </div>
             </article>
 
@@ -271,9 +259,6 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">o culpado não foi eu - ao vivo</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
                 </div>
             </article>
 
@@ -287,9 +272,6 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">À Portovelhera</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
                 </div>
             </article>
             <article class="featured-project">
@@ -302,9 +284,6 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">Garota beira rio</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
                 </div>
             </article>
             <article class="featured-project">
@@ -317,9 +296,6 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">Pra te fazer feliz</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
                 </div>
             </article>
 
@@ -332,10 +308,7 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="title-description">
-                    <h3 class="project-title">IMÃ</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
+                    <h3 class="project-title">Ímã</h3>
                 </div>
             </article>
 
@@ -349,9 +322,6 @@
                 </div>
                 <div class="title-description">
                     <h3 class="project-title">Paradoxo</h3>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
-                        expedita! Quidem eaque illum debitis officia, optio quia in quas est quisquam. Eum laborum
-                        perferendis odio est dolorem quis explicabo fugit!</p>
                 </div>
             </article>
 
@@ -369,7 +339,7 @@
                             target="_blank" class="instagram">Instagram</a></li>
                     <li><a href="https://www.youtube.com/@silvinhosantos5537" target="_blank" class="youtube">You
                             Tube</a></li>
-                    <li><a href="#" target="_blank" class="whatsapp">WhatsApp</a></li>
+                    <li><a href="https://wa.me/5569992041563?text=Olá%20Silvinho!%0APeguei%20seu%20contato%20através%20do%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário%20com%20você%20para%20meu%20evento." target="_blank" class="whatsapp">WhatsApp</a></li>
                 </ul>
             </div>
         </footer>

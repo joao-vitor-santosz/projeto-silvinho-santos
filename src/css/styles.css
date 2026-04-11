@@ -2,6 +2,18 @@ body {
     font-family: 'Newsreader', sans-serif;
 }
 
+.home,
+.discography,
+.projects {
+    display: none;
+}
+
+.home.is-active,
+.discography.is-active,
+.projects.is-active {
+    display: block;
+}
+
 .btn {
     color: #442B00;
     font-weight: 600;

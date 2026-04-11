@@ -16,7 +16,6 @@ menuLinks.forEach(link => {
         e.preventDefault()
 
         const sectionId = link.dataset.section
-        localStorage.setItem('activeSection', link.dataset.section)
 
         // Remove is-active de todos os links
         menuLinks.forEach(l => l.classList.remove('is-active'))

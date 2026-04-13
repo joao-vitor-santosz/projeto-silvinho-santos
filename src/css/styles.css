@@ -4,13 +4,15 @@ body {
 
 .home,
 .discography,
-.projects {
+.projects,
+.interviews {
     display: none;
 }
 
 .home.is-active,
 .discography.is-active,
-.projects.is-active {
+.projects.is-active,
+.interviews.is-active {
     display: block;
 }
 

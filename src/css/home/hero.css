@@ -55,7 +55,7 @@
     box-shadow: 0px 0px 30px #00df5d;
 }
 
-.hero .buttons .contact2:hover {
+.hero .buttons .contact2:hover, .about .image-curriculum .curriculum:hover {
     box-shadow: 0px 0px 30px #ffd000;
 }
 
@@ -71,6 +71,19 @@
     padding: 8rem 3rem;
     display: flex;
     gap: 5rem;
+}
+
+.about .image-curriculum {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about .image-curriculum .curriculum {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #FFBA4A;
 }
 
 .about .description {

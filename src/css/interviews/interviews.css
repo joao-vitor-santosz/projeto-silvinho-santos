@@ -91,3 +91,83 @@
     font-size: 1rem;
     color: #C3C8BC;
 }
+
+@media (max-width: 768px) {
+
+    .interviews {
+        padding: 5rem 1.5rem;
+    }
+
+    .interviews .title-label {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .interviews .title-label .title {
+        font-size: 4rem;
+    }
+
+    /* Dois cards por linha */
+    .interviews .interviews-cards .card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .interviews {
+        padding: 4rem 1rem;
+    }
+
+    .interviews .title-label .title {
+        font-size: 3rem;
+    }
+
+    .interviews .title-label .label {
+        font-size: 1rem;
+    }
+
+    .interviews .interviews-cards {
+        gap: 1.5rem;
+    }
+
+    /* Mantém dois cards por linha */
+    .interviews .interviews-cards .card {
+        width: 100%;
+    }
+
+    .interviews .interviews-cards .card .title-date {
+        padding: 1.5rem;
+    }
+
+    .interviews .interviews-cards .card .title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .interviews {
+        padding: 3rem 1rem;
+    }
+
+    .interviews .title-label .title {
+        font-size: 2.5rem;
+    }
+
+    .interviews .interviews-cards .card .title-date {
+        padding: 1.25rem;
+    }
+
+    .interviews .interviews-cards .card .title {
+        font-size: 1.125rem;
+    }
+
+    .interviews .interviews-cards .card .description {
+        font-size: 0.9rem;
+    }
+
+    .interviews .interviews-cards .card .channel {
+        font-size: 0.875rem;
+    }
+}

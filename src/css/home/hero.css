@@ -79,11 +79,18 @@
     gap: 2rem;
 }
 
+.about .image-curriculum .curriculum-portfolio {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
 .about .image-curriculum .curriculum {
     text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    padding: 1rem 0;
     background-color: #FFBA4A;
+    width: 50%;
 }
 
 .about .description {

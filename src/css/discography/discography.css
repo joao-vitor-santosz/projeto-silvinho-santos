@@ -163,6 +163,7 @@
         font-size: 0.9rem;
         line-height: 1.5rem;
         margin-bottom: 1rem;
+        text-align: justify;
     }
 
     /* O .reverse do year-release também volta ao normal */

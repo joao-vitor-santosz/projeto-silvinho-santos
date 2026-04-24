@@ -181,7 +181,7 @@
 
 @media (max-width: 768px) {
     .hero {
-        background-position: center 20%;
+        background-position: 10% 15%;
         height: 100vh;
     }
 
@@ -207,7 +207,6 @@
 
     /* Hero */
     .hero {
-        background-position: 10% 15%;
         height: 100vh;
         padding-left: 1.5rem;
         padding-top: 3rem;

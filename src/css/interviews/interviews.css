@@ -95,7 +95,7 @@
 @media (max-width: 768px) {
 
     .interviews {
-        padding: 5rem 1.5rem;
+        padding: 8rem 1.5rem 5rem 1.5rem;
     }
 
     .interviews .title-label {
@@ -116,7 +116,7 @@
 @media (max-width: 480px) {
 
     .interviews {
-        padding: 4rem 1rem;
+        padding: 7rem 1rem 4rem 1rem;
     }
 
     .interviews .title-label .title {
@@ -148,7 +148,7 @@
 @media (max-width: 375px) {
 
     .interviews {
-        padding: 3rem 1rem;
+        padding: 7rem 1rem 3rem 1rem;
     }
 
     .interviews .title-label .title {

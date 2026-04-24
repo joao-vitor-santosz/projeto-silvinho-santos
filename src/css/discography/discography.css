@@ -88,7 +88,7 @@
 @media (max-width: 768px) {
 
     .discography {
-        padding: 4rem 1.5rem;
+       padding: 8rem 1rem 3rem 1rem;
     }
 
     .discography .title {
@@ -130,10 +130,6 @@
 }
 
 @media (max-width: 480px) {
-
-    .discography {
-        padding: 3rem 1rem;
-    }
 
     .discography .title .title-discography {
         font-size: 2.5rem;
@@ -182,10 +178,6 @@
 }
 
 @media (max-width: 375px) {
-
-    .discography {
-        padding: 2.5rem 1rem;
-    }
 
     .discography .title {
         margin-bottom: 2rem;

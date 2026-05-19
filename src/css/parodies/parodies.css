@@ -1,0 +1,301 @@
+/* ===== PARODIES SECTION ===== */
+
+.parodies {
+    background-color: #12140E;
+    color: #fff;
+    padding: 8rem 2rem;
+}
+
+.parodies .parodies-header {
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+.parodies .parodies-header .parodies-title {
+    font-size: 6rem;
+    font-weight: 400;
+    color: #E3E3D9;
+    margin-bottom: 1rem;
+}
+
+.parodies .parodies-header .parodies-title span {
+    color: #FFBA4A;
+}
+
+.parodies .parodies-header .parodies-label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125rem;
+    color: #E3E3D9;
+}
+
+.parodies .parodies-highlight {
+    width: 100%;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, #43483f21 0%, #2a2e2821 100%);
+    border-left: 4px solid #FFBA4A;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 3rem;
+    align-items: center;
+}
+
+.parodies .parodies-highlight:hover {
+    background: linear-gradient(135deg, #43483f35 0%, #2a2e2835 100%);
+    box-shadow: 0px 0px 20px rgba(255, 186, 74, 0.15);
+}
+
+.parodies .parodies-highlight .highlight-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.parodies .parodies-highlight .highlight-title {
+    font-family: 'Newsreader', serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #FFBA4A;
+    margin: 0;
+}
+
+.parodies .parodies-highlight .highlight-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.0625rem;
+    color: #E3E3D9;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.parodies .parodies-highlight .highlight-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background: rgba(255, 186, 74, 0.08);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 186, 74, 0.2);
+}
+
+.parodies .parodies-highlight .highlight-icon {
+    font-size: 6rem;
+    opacity: 0.8;
+}
+
+.parodies .parodies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.parodies .parodies-grid .parody-card {
+    width: calc(33.333% - 1.4rem);
+    background-color: #43483f21;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.parodies .parodies-grid .parody-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 30px #cfcf47b4;
+}
+
+.parodies .parodies-grid .parody-card iframe, .parodies .parodies-grid .parody-card img  {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.parodies .parodies-grid .parody-card .parody-info {
+    padding: 2rem;
+}
+
+.parodies .parodies-grid .parody-card .parody-date {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    color: #C3C8BC;
+    margin-bottom: 0.75rem;
+}
+
+.parodies .parodies-grid .parody-card .parody-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #E3E3D9;
+    margin-bottom: 0.75rem;
+}
+
+.parodies .parodies-grid .parody-card .parody-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    color: #C3C8BC;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.parodies .parodies-grid .parody-card .parody-subject {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    color: #FFBA4A;
+    padding-top: 1rem;
+    border-top: 2px solid #9799941a;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+
+    .parodies {
+        padding: 5rem 1.5rem;
+    }
+
+    .parodies .parodies-header {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .parodies .parodies-header .parodies-title {
+        font-size: 4rem;
+    }
+
+    .parodies .parodies-highlight {
+        padding: 2rem;
+        margin-bottom: 3rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .parodies .parodies-highlight .highlight-title {
+        font-size: 1.5rem;
+    }
+
+    .parodies .parodies-highlight .highlight-text {
+        font-size: 1rem;
+    }
+
+    .parodies .parodies-highlight .highlight-visual {
+        height: 150px;
+    }
+
+    .parodies .parodies-highlight .highlight-icon {
+        font-size: 4.5rem;
+    }
+
+    /* Dois cards por linha */
+    .parodies .parodies-grid .parody-card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .parodies {
+        padding: 4rem 1rem;
+    }
+
+    .parodies .parodies-header .parodies-title {
+        font-size: 3rem;
+    }
+
+    .parodies .parodies-header .parodies-label {
+        font-size: 1rem;
+    }
+
+    .parodies .parodies-highlight {
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .parodies .parodies-highlight .highlight-title {
+        font-size: 1.25rem;
+    }
+
+    .parodies .parodies-highlight .highlight-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .parodies .parodies-highlight .highlight-visual {
+        height: 120px;
+    }
+
+    .parodies .parodies-highlight .highlight-icon {
+        font-size: 3.5rem;
+    }
+
+    .parodies .parodies-grid {
+        gap: 1.5rem;
+    }
+
+    /* Mantém dois cards por linha */
+    .parodies .parodies-grid .parody-card {
+        width: calc(50% - 0.75rem);
+    }
+
+    .parodies .parodies-grid .parody-card .parody-info {
+        padding: 1.5rem;
+    }
+
+    .parodies .parodies-grid .parody-card .parody-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .parodies {
+        padding: 3rem 1rem;
+    }
+
+    .parodies .parodies-highlight {
+        padding: 1.25rem;
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .parodies .parodies-highlight .highlight-title {
+        font-size: 1.125rem;
+    }
+
+    .parodies .parodies-highlight .highlight-text {
+        font-size: 0.9rem;
+    }
+
+    .parodies .parodies-highlight .highlight-visual {
+        height: 100px;
+    }
+
+    .parodies .parodies-highlight .highlight-icon {
+        font-size: 3rem;
+    }
+
+    .parodies .parodies-header .parodies-title {
+        font-size: 2.5rem;
+    }
+
+    /* Uma coluna só */
+    .parodies .parodies-grid .parody-card {
+        width: 100%;
+    }
+
+    .parodies .parodies-grid .parody-card .parody-info {
+        padding: 1.25rem;
+    }
+
+    .parodies .parodies-grid .parody-card .parody-title {
+        font-size: 1.125rem;
+    }
+
+    .parodies .parodies-grid .parody-card .parody-description {
+        font-size: 0.9rem;
+    }
+
+    .parodies .parodies-grid .parody-card .parody-subject {
+        font-size: 0.875rem;
+    }
+}

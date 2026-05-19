@@ -24,7 +24,7 @@ menuLinks.forEach(link => {
         link.classList.add('is-active')
 
         // Remove is-active de todas as seções
-        document.querySelectorAll('.home, .discography, .projects')
+        document.querySelectorAll('.home, .discography, .projects, .interviews, .parodies')
             .forEach(section => section.classList.remove('is-active'))
 
         // Adiciona is-active na seção correta

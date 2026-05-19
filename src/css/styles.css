@@ -5,14 +5,16 @@ body {
 .home,
 .discography,
 .projects,
-.interviews {
+.interviews,
+.parodies {
     display: none;
 }
 
 .home.is-active,
 .discography.is-active,
 .projects.is-active,
-.interviews.is-active {
+.interviews.is-active,
+.parodies.is-active {
     display: block;
 }
 

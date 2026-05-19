@@ -1,11 +1,26 @@
 .interviews {
     background-color: #0d0e0b;
     padding: 8rem 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: interviewsFadeIn 0.8s ease-out forwards;
 }
 
 .interviews .title-label {
     width: 50%;
     margin-bottom: 5rem;
+    opacity: 0;
+    transform: translateX(-24px);
+    animation: interviewsTitleIntro 0.9s ease-out 0.2s forwards;
+}
+
+.interviews .interviews-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: interviewsCardsIntro 0.9s ease-out 0.25s forwards;
 }
 
 .interviews .title-label .title {
@@ -30,18 +45,23 @@
     font-size: 1.125rem;
 }
 
-.interviews .interviews-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
 .interviews .interviews-cards .card {
     width: calc(33.333% - 1.4rem);
     background-color: #43483f21;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    opacity: 0;
+    animation: interviewsCardPop 0.75s ease-out forwards;
 }
+
+.interviews .interviews-cards .card:nth-child(1) { animation-delay: 0.18s; }
+.interviews .interviews-cards .card:nth-child(2) { animation-delay: 0.26s; }
+.interviews .interviews-cards .card:nth-child(3) { animation-delay: 0.34s; }
+.interviews .interviews-cards .card:nth-child(4) { animation-delay: 0.42s; }
+.interviews .interviews-cards .card:nth-child(5) { animation-delay: 0.50s; }
+.interviews .interviews-cards .card:nth-child(6) { animation-delay: 0.58s; }
+.interviews .interviews-cards .card:nth-child(7) { animation-delay: 0.66s; }
+.interviews .interviews-cards .card:nth-child(8) { animation-delay: 0.74s; }
 
 .interviews .interviews-cards .card img {
     width: 100%;
@@ -51,8 +71,9 @@
 }
 
 .interviews .interviews-cards .card:hover{
-    transform: translateY(-2px);
-    box-shadow: 0px 0px 30px #cfcf47b4;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 40px rgba(230, 230, 39, 0.781);
+    cursor: pointer;
 }
 
 .interviews .interviews-cards .card iframe {
@@ -169,5 +190,49 @@
 
     .interviews .interviews-cards .card .channel {
         font-size: 0.875rem;
+    }
+}
+
+@keyframes interviewsFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes interviewsTitleIntro {
+    from {
+        opacity: 0;
+        transform: translateX(-24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes interviewsCardsIntro {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes interviewsCardPop {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }

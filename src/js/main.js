@@ -57,3 +57,26 @@ if (aboutSection) {
 
     aboutObserver.observe(aboutSection)
 }
+
+// ===== ANIMAÇÃO DA SEÇÃO DISCOGRAPHY AO ENTRAR NA TELA =====
+const discographyTitle = document.querySelector('.discography .title')
+const discographyAlbums = document.querySelectorAll('.discography .albums-list .album')
+
+if (discographyTitle || discographyAlbums.length) {
+    const discographyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible')
+                observer.unobserve(entry.target)
+            }
+        })
+    }, {
+        threshold: 0.2
+    })
+
+    if (discographyTitle) {
+        discographyObserver.observe(discographyTitle)
+    }
+
+    discographyAlbums.forEach(album => discographyObserver.observe(album))
+}

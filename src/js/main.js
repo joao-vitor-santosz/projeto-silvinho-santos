@@ -39,3 +39,21 @@ menuLinks.forEach(link => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     })
 })
+
+// ===== ANIMAÇÃO DA SEÇÃO ABOUT AO ENTRAR NA TELA =====
+const aboutSection = document.querySelector('#about')
+
+if (aboutSection) {
+    const aboutObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate')
+                observer.unobserve(entry.target)
+            }
+        })
+    }, {
+        threshold: 0.2
+    })
+
+    aboutObserver.observe(aboutSection)
+}

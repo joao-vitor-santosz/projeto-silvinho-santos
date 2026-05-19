@@ -10,6 +10,7 @@
     align-items: center;
     padding-left: 3rem;
     padding-top: 5rem;
+    overflow: hidden;
 }
 
 .hero::before {
@@ -18,6 +19,7 @@
     inset: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1) 100%);
     z-index: 0;
+    animation: heroGlow 12s ease-in-out infinite alternate;
 }
 
 .hero .artist {
@@ -25,12 +27,25 @@
     color: #fff;
     width: 50%;
     z-index: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroFadeSlide 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.hero .artist-name,
+.hero .catchy-phrase,
+.hero .buttons {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroFadeSlide 1.1s ease-out forwards;
 }
 
 .hero .artist-name {
     font-size: 8rem;
     font-weight: 400;
     margin-bottom: 2rem;
+    animation-delay: 0.5s;
 }
 
 .hero .artist-name span {
@@ -40,11 +55,35 @@
 .hero .catchy-phrase {
     font-size: 1.875rem;
     margin-bottom: 2rem;
+    animation-delay: 0.8s;
 }
 
 .hero .buttons {
     display: flex;
     gap: 1.5rem;
+    animation-delay: 1s;
+}
+
+@keyframes heroFadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroGlow {
+    from {
+        transform: translateZ(0) scale(1);
+        filter: brightness(0.95);
+    }
+    to {
+        transform: translateZ(0) scale(1.02);
+        filter: brightness(1.05);
+    }
 }
 
 .hero .buttons .streaming {
@@ -144,6 +183,68 @@
 .about .description .info .label {
     font-size: 0.75rem;
     color: #C3C8BC;
+}
+
+.about .image-curriculum {
+    opacity: 0;
+    transform: translateX(-35px);
+}
+
+.about .description {
+    opacity: 0;
+    transform: translateX(35px);
+}
+
+.about .image-curriculum .curriculum-portfolio,
+.about .description .info {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.about.animate .image-curriculum {
+    animation: aboutImageSlideIn 0.8s ease-out 0.2s forwards;
+}
+
+.about.animate .description {
+    animation: aboutTextSlideIn 0.8s ease-out 0.25s forwards;
+}
+
+.about.animate .image-curriculum .curriculum-portfolio,
+.about.animate .description .info {
+    animation: aboutFadeUp 0.8s ease-out 0.55s forwards;
+}
+
+@keyframes aboutImageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutTextSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 992px) {

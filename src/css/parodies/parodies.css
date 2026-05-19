@@ -261,7 +261,7 @@
 @media (max-width: 480px) {
 
     .parodies {
-        padding: 4rem 1rem;
+        padding: 7rem 1rem;
     }
 
     .parodies .parodies-header .parodies-title {
@@ -300,9 +300,9 @@
         gap: 1.5rem;
     }
 
-    /* Mantém dois cards por linha */
+    /* Uma coluna só */
     .parodies .parodies-grid .parody-card {
-        width: calc(50% - 0.75rem);
+        width: 100%;
     }
 
     .parodies .parodies-grid .parody-card .parody-info {
@@ -315,10 +315,6 @@
 }
 
 @media (max-width: 375px) {
-
-    .parodies {
-        padding: 3rem 1rem;
-    }
 
     .parodies .parodies-highlight {
         padding: 1.25rem;
@@ -344,11 +340,6 @@
 
     .parodies .parodies-header .parodies-title {
         font-size: 2.5rem;
-    }
-
-    /* Uma coluna só */
-    .parodies .parodies-grid .parody-card {
-        width: 100%;
     }
 
     .parodies .parodies-grid .parody-card .parody-info {

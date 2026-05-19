@@ -136,13 +136,14 @@ projeto-silvinho-santos/
 - Navegação SPA (Single Page Application) sem recarregamento de página
 - Scroll suave para melhor experiência do usuário
 - Links ativos indicando a seção visualizada
+- Animações de entrada das seções via IntersectionObserver
 
 ### ✅ Seções do Site
 
 1. **Home (Hero Section)**
    - Apresentação visual impactante do artista
    - Chamada para ação (CTA) com botões de contato e Spotify
-   - Informações de conquistas (20+ anos de estrada, 3 álbuns)
+   - Informações de conquistas (20+ anos de estrada, 4 álbuns)
 
 2. **Sobre o Artista**
    - Biografia completa e profissional
@@ -160,7 +161,16 @@ projeto-silvinho-santos/
    - Descrição dos projetos
    - Podcast Podblá destacado
 
-5. **Contato**
+5. **Entrevistas & Participações**
+   - Cards com matérias, entrevistas e participações em TV
+   - Vídeos e links externos para ampliar a visibilidade
+
+6. **Paródias Educativas**
+   - Paródias musicais sobre temas de biologia
+   - Conteúdos criativos para educar com música
+   - Vídeos e referências de aulas engajantes
+
+7. **Contato**
    - Botão WhatsApp em múltiplas posições (header, hero, footer)
    - Mensagem pré-preenchida para agendamento de eventos
 
@@ -197,7 +207,8 @@ projeto-silvinho-santos/
 - **Home**: Clique no logo ou link "Home" no menu
 - **Discografia**: Acesse a galeria completa de álbuns
 - **Projetos**: Veja vídeos e trabalhos audiovisuais
-- **Entrevistas**: Conheça mais sobre o artista através de entrevistas
+- **Entrevistas**: Conheça mais sobre o artista através de entrevistas e participações
+- **Paródias**: Aprenda com as paródias educativas em biologia
 - **Contato**: Agende um evento direto pelo WhatsApp
 
 ---

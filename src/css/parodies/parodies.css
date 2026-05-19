@@ -75,14 +75,15 @@
     align-items: center;
     justify-content: center;
     height: 180px;
-    background: rgba(255, 186, 74, 0.08);
     border-radius: 8px;
-    border: 2px solid rgba(255, 186, 74, 0.2);
+    overflow: hidden;
 }
 
-.parodies .parodies-highlight .highlight-icon {
-    font-size: 6rem;
-    opacity: 0.8;
+.parodies .parodies-highlight .highlight-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .parodies .parodies-grid {
